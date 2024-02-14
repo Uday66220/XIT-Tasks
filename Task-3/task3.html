@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            
+            width: 45%;
+            height: 600px;
+            margin:0 auto;
+            opacity: 0.9;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container h3{
+            text-align: center;
+        }
+        .left{
+            
+            float: left;
+            width:30%;            
+        }
+        .right{
+            
+            float:left;
+            width:30%;
+        }
+        .bottom{
+            clear: both;       }
+        .bottom h4{
+            text-align: left;
+        }
+        .button
+        {
+        background-color: #04AA6D;
+        color: white;
+        padding: 10px 10px;
+        margin: 10px 10px;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+        } 
+        .button:hover {
+        opacity: 0.8;
+        }
+        .budgetselect{
+            width: 20%;
+        }
+        .bottomleft{
+            float:left;
+            width: 30%;
+        }
+        bottomright{
+            
+            float: right;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact us</h1>
+        <h3>Want to advertise on Tumblr? Great, you're in the right place.We just need to know a little bit more about you</h3>
+            <div class="left">
+                <form>
+                    <label for="fname">*First Name:</label><br>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="company">*Company:</label><br>
+                    <input type="text" id="company" name="company"><br><br>
+                    <label for="email">*Email:</label><br>
+                    <input type="text" id="email" name="email"><br><br>
+                    <label for="tumburl">Tumblr URL:</label><br>
+                    <input type="text" id="tumburl" name="tumburl"><br><br>
+                </form>
+            </div>
+            <div class="right">
+                <form>
+                    <label for="lname">*Last Name:</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="country">*Country:</label><br>
+                    <select name="country" id="country" style="width: 80%; height: 21px">
+                        <option value="Select...">Select...</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="australia">Australia</option>
+                        <option value="russia">Russia</option>
+                    </select><br><br>
+                    <label for="phnumber">*Phone Number:</label><br>
+                    <input type="text" id="phnumber" name="phnumber"><br><br>
+                    <label for="weburl">Website URL:</label><br>
+                    <input type="text" id="weburl" name="weburl"><br><br>
+                </form>
+            </div>
+            
+            <div class="bottom">
+                
+                <p style="font-size: 17px;">What is Your Monthly Advertising Budget?</p>
+                <select name="budget" id="budget" class="budgetselect">
+                    <option value="0">Select....</option>
+                    <option value="50k">50000</option>
+                    <option value="40k">40000</option>
+                    <option value="30k">30000</option>
+                </select><br>
+            </div>
+            <p style="font-size: 17px;">What can we help you with?</p>
+            <div class="bottomleft">
+                
+                <input type="checkbox" id="Sponsored days" name="Sponsored days" value="Sponsored days">
+                <label for="vehicle1">Sponsored days</label><br><br>
+                <input type="checkbox" id="Sponsored Posts" name="Sponsored Posts" value="Sponsored Posts">
+                <label for="vehicle2"> Sponsored Posts</label><br><br>
+                <input type="checkbox" id="Sponsored Video Posts" name="Sponsored Video Posts" value="Sponsored Video Posts">
+                <label for="vehicle3"> Sponsored Video Posts</label><br><br>
+            </div>
+            <div class="bottomright">
+                <input type="checkbox" id="Creative Guidance" name="Creative Guidance" value="Creative Guidance">
+                <label for="vehicle1">Creative Guidance</label><br><br>
+                <input type="checkbox" id="App Installs" name="App Installs" value="App Installs">
+                <label for="vehicle2"> App Installs</label><br><br>
+                <input type="checkbox" id="Something Else" name="Something Else" value="Something Else">
+                <label for="vehicle3"> Something Else</label><br><br>
+                
+            </div>
+            <input type="button" value="submit" class="button">
+    </div>
+</body>
+</html>

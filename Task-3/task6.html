@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 660px;
+            width: 35%;
+            border: 4px dotted aqua;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #header{
+            padding-left: 30px;
+            
+            font-size: 30px;
+        }
+        #info{
+            padding-left: 30px;
+            font-size: small;
+        }
+        .add{
+            padding-left: 30px;
+        }
+        .city{
+            padding-left: 30px;
+            float:left;
+            width: 47%;
+        }
+        .state{
+            float: left;
+            width: 20%;
+        }
+        .Zipcode{
+            float: left;
+            width: 20%;
+        }
+        #hori{
+            margin-left: 17px;
+            margin-top: 70px;
+            width: 90%;
+            border-top: 3px dotted aqua;
+            border-bottom: none; 
+        }
+        .bottomleft{
+            padding-left: 30px;
+            width: 50%;
+            float: left;
+        }
+        .bottomright{
+            
+            width: 40%;
+            float: left;
+        }
+        .bottom{
+            width: 90%;
+            height:50px;
+            padding-left: 30px;
+        }
+        .bottom table{
+            width: 100%;
+            height:40px;
+            padding-top: 20px;
+        }
+        .button{
+            margin-top: 100px;
+                color: white;
+                background-color: rgba(226,45,122,255);
+                border: none;
+                font-size: 15px;
+                text-align: center;
+                height: 35px;
+                width: 85%;
+                margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="header">Tell us about your home.</p>
+        <p id="info"><span style="font-size: x-large; color: aqua">Address</span>&nbsp;&nbsp;  YOUR INFORMATION IS PRIVATE</P><br>
+        <form class="add">
+            <label for="address" style="font-weight: 400;">Address</label><br>
+            <input type="text" name="address" id="address" placeholder="enter an address" style="width:80%; height:20px"><br><br>
+            <label for="address2" style="font-weight: 400;">Address 2</label><br>
+            <input type="text" name="address2" id="address2" placeholder="Apt number" style="width:80%; height:20px"><br><br>
+        </form>
+        <div class="city">
+            <form>
+                <label for="city">City</label><br>
+                <input type="text" name="city" id="city" placeholder="City" style="width:80%; height:20px">
+            </form>
+        </div>
+        <div class="state">
+            <form>
+                <label for="state">State</label><br>
+                <input type="text" name="state" id="state" placeholder="State" style="width:50%; height:20px">
+            </form>
+        </div>
+        <div class="Zipcode">
+            <form>
+                <label for="zipcode">Zip code</label><br>
+                <input type="number" name="zipcode" id="zipcode" placeholder="zipcode" style="width:50%; height:20px">
+            </form>
+        </div>
+        <hr id="hori">
+        <p style="font-size: 10px;"><span style="font-size:x-large; padding-left:20px;padding-top:10px;color:aqua">Bed & Bath</span>&nbsp;&nbsp;&nbsp;&nbsp;WHAT IS YOUR HOME LIKE?</p>
+        <div class="bottomleft">
+            <label for="hometype">Home Type</label><br>
+            <select name="hometype" id="hometype" style="width:80%">
+                <option value="House">House</option>
+                <option value="independent">building</option>
+            </select><br><br>
+            <label for="Bedrooms">Bed Rooms</label><br>
+            <select name="bedrooms" id="bedrooms" style="width: 80%;">
+                <option value="1bedrooms">1 bedroom</option>
+                <option value="2bedroom">2 bedroom</option>
+            </select>
+        </div>
+        <div class="bottomright">
+            <label for="roomtype">Room Type</label><br>
+            <select name="roomtype" id="roomtype" style="width:80%">
+                <option value="EntireHome">EntireHome/Apt</option>
+                <option value="apt">Apartment</option>
+            </select><br><br>
+            <label for="Bathrooms">Bath Rooms</label><br>
+            <select name="bathrooms" id="bathrooms" style="width: 80%;">
+                <option value="1bathroom">1 bathroom</option>
+                <option value="2bathrooms">2 bathrooms</option>
+            </select>
+        </div>
+        <div class="bottom">
+            <table>
+                <tr>
+                    <td>
+                        <label for="king">King</label><br>
+                        <select name="king" style="width:80px; height:25px">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="Queen">Queen</label><br>
+                        <select name="Queen" style="width:80px; height:25px">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="Full">Full</label><br>
+                        <select name="Full" style="width:80px; height:25px">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="Twin">Twin</label><br>
+                        <select name="Twin" style="width:80px; height:25px">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <button class="button">Sign me up!</button>
+    </div>
+</body>
+</html>
