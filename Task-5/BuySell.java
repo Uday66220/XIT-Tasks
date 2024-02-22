@@ -20,12 +20,14 @@ import java.util.*;
 class BuySell {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size of an array/Number of days :");
         int n = sc.nextInt();
         int[] arr = new int[n];
+        System.out.println("Enter the prices : ");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println(profit(arr));
+        System.out.println("Maximum profit : " + profit(arr));
     }
 
     public static int profit(int[] arr) {
