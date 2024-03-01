@@ -44,7 +44,7 @@ function showData(){
         html+="<td>"+element.name+"</td>";
         html+="<td>"+element.email+"</td>";
         html+="<td>"+element.phonenumber+"</td>";
-        html+='<td><button onclick="deleteData('+index+')" class="btn btn-danger">Delete</button><button onclick="updateData('+index+')" class="btn btn-success">Update</button>';
+        html+='<td><button onclick="deleteData('+index+')" class="btn btn-danger">Delete</button>&nbsp<button onclick="updateData('+index+')" class="btn btn-success">Update</button>';
         html+="</tr>";
     });
     document.querySelector("#crudTable tbody").innerHTML=html;
