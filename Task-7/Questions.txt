@@ -1,0 +1,19 @@
+1.How does dataset work, Alternative for Dataset.
+
+2.How datasets work.
+
+3.How does Array work with Memory
+
+4.How does ArrayList work with Memory
+
+5.Array VS ArrayList
+
+6.Understanding about memory working with Array and collection objects
+
+7.How does Garbage collector work with Array/Array List/Dictionary and how is memory freed of an object and what is the process
+
+8.Connection of Garbage Collector with Threading process.
+
+9.How garbadge collector works with multiple threads
+
+10. what do you think why Time and space complexity is important explain it  with an own example
