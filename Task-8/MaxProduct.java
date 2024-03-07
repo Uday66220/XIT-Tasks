@@ -28,6 +28,12 @@ Desired Output : 36
 Integers : 3,3,4 or 3,3,2,2
  */
 
+//approach
+
+/*The maximum product can be obtained be repeatedly cutting parts of size 3 
+while size is greater than 4, keeping the last part as size of 2 or 3 or 4.
+*/
+
 import java.util.*;
 
 class MaxProduct {
